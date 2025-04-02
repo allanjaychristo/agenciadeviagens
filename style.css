@@ -1,0 +1,214 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.6;
+    margin: 0; /* Remove as margens padrão */
+    padding: 0; /* Remove o padding padrão */
+    background: url('https://images7.alphacoders.com/352/352184.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Centraliza verticalmente */
+    min-height: 100vh; /* Garante que o fundo cubra toda a altura da tela */
+    position: relative;
+    z-index: 0;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5); /* Cor branca com opacidade reduzida */
+    z-index: -1;
+}
+
+header {
+    background: linear-gradient(135deg, rgba(255, 140, 0, 0.8), rgba(255, 165, 0, 0.8)); /* Gradiente laranja */
+    color: #fff; /* Texto em branco */
+    padding: 30px; /* Aumenta o padding */
+    text-align: center;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona sombra para destaque */
+    border-bottom: 2px solid #8B4513; /* Adiciona borda inferior */
+    display: flex; /* Adiciona flexbox */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    flex-direction: column; /* Define a direção da flexbox como coluna */
+    margin-bottom: 30px; /* Adiciona espaçamento inferior */
+    transition: background-color 0.3s ease; /* Adiciona transição suave */
+}
+
+header:hover {
+    background-color: rgba(255, 140, 0, 1); /* Cor de fundo ao passar o mouse */
+}
+
+.header-content {
+    display: flex; /* Adiciona flexbox */
+    flex-direction: column; /* Define a direção da flexbox como coluna */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    padding: 20px; /* Adiciona padding */
+    border-radius: 10px; /* Bordas arredondadas */
+}
+
+.header-content h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif; /* Fonte original */
+    font-size: 2.5em; /* Aumenta o tamanho da fonte */
+    margin: 0;
+}
+
+.header-content p {
+    font-family: Georgia, 'Times New Roman', Times, serif; /* Fonte original */
+    font-size: 1.2em; /* Aumenta o tamanho da fonte */
+    margin: 0;
+}
+
+h1 {
+    color: #fff; /* Cor branca para maior contraste */
+    text-align: center;
+    margin-bottom: 30px; /* Aumenta o espaçamento inferior */
+    background: rgba(255, 165, 0, 0.8); /* Fundo laranja semitransparente */
+    padding: 30px; /* Aumenta o padding para destaque */
+    border-radius: 10px; /* Bordas mais arredondadas */
+    width: 80%; /* Limita a largura do título */
+    font-size: 2.5em; /* Aumenta o tamanho da fonte */
+    font-weight: bold; /* Deixa o texto em negrito */
+}
+
+h2 {
+    color: #fff; /* Cor branca para maior contraste */
+    text-align: center;
+    margin-top: 30px; /* Aumenta o espaçamento superior */
+    margin-bottom: 30px; /* Adiciona espaçamento inferior */
+    background: rgba(255, 140, 0, 0.8); /* Fundo laranja semitransparente */
+    padding: 20px; /* Aumenta o padding para destaque */
+    border-radius: 10px; /* Bordas mais arredondadas */
+    width: 80%; /* Limita a largura do subtítulo */
+    font-size: 2em; /* Aumenta o tamanho da fonte */
+    font-weight: bold; /* Deixa o texto em negrito */
+}
+
+form {
+    margin-bottom: 30px; /* Aumenta o espaçamento inferior */
+    background: rgba(254, 246, 194, 0.9);
+    padding: 40px; /* Aumenta o padding */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%; /* Limita a largura do formulário */
+    display: flex; /* Adiciona flexbox */
+    flex-direction: column; /* Define a direção da flexbox como coluna */
+    align-items: center; /* Centraliza os itens horizontalmente */
+}
+
+form input, form button {
+    margin: 10px 0; /* Aumenta o espaçamento vertical */
+    padding: 15px; /* Aumenta o padding */
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: rgba(255, 140, 0, 0.8);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Adiciona transição suave */
+}
+
+form button:hover {
+    background-color:  #8B4513; 
+}
+
+table {
+    width: 80%; /* Limita a largura da tabela */
+    border-collapse: collapse;
+    margin-top: 30px; /* Aumenta o espaçamento superior */
+    background: rgba(254, 246, 194, 0.9); /* Fundo branco semitransparente */
+    border-radius: 10px; /* Bordas mais arredondadas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 1s ease-in; /* Animação de fade-in */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+table, th, td {
+    border: 1px solid #8B4513; /* Cor da borda marrom escuro */
+}
+
+th, td {
+    padding: 15px; /* Aumenta o padding */
+    text-align: center;
+    color: #333; /* Cor do texto mais escura */
+}
+
+th {
+    background-color: rgba(255, 140, 0, 0.8);/* Fundo laranja mais opaco */
+}
+
+tr:nth-child(even) {
+    background-color: rgba(254, 246, 194, 0.9); /* Fundo amarelo semitransparente */
+}
+
+table tr:hover {
+    background-color:rgba(255, 140, 0, 0.8);/* Cor de fundo ao passar o mouse */
+    transition: background-color 0.3s ease; /* Adiciona transição suave */
+}
+
+/* Galeria de Destinos */
+.gallery {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px; /* Aumenta o padding */
+    width: 80%;
+    background-color: rgba(254, 246, 194, 0.9); /* Fundo branco semitransparente */
+    border-radius: 10px; /* Bordas mais arredondadas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.destination {
+    text-align: center;
+    margin: 20px; /* Aumenta o espaçamento */
+    transition: transform 0.3s ease; /* Adiciona transição suave */
+}
+
+.destination:hover {
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+}
+
+.destination img {
+    width: 200px; /* Define um tamanho fixo para as imagens */
+    height: 200px; /* Define um tamanho fixo para as imagens */
+    border-radius: 10px; /* Bordas arredondadas */
+}
+
+.destination p {
+    font-family: 'Roboto', sans-serif; /* Fonte Roboto */
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.destination a {
+    font-family: 'Roboto', sans-serif; /* Fonte Roboto */
+    color: #8B4513; /* Cor do link */
+    text-decoration: none;
+}
+
+/* Rodapé */
+footer {
+    background-color: rgba(255, 140, 0, 0.8); /* Fundo laranja semitransparente */
+    color: #fff; /* Texto em branco */
+    padding: 40px 0; /* Aumenta o padding vertical */
+    text-align: center;
+    width: 100%;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1); /* Adiciona sombra para destaque */
+    border-top: 2px solid #8B4513;
+}
